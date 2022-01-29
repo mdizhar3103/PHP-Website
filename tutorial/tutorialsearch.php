@@ -24,7 +24,7 @@ if (!$searchAuthor && !$searchCourse)
 # open the database connection
 try
 {
-    $db = new PDO("mysql:host=localhost;dbname=tutorials", "root", "password");
+    $db = new PDO("mysql:host=localhost;dbname=tutorials", "adminuser", "passwordadmin");
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch(PDOException $e)

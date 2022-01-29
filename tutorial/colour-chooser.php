@@ -13,7 +13,7 @@ $colours = array(
 // If this is a postback, create the cookie
 if (isset($_GET['colourchosen']))
 {
-    setcookie('colourpreference', $colours[$_GET['colourchosen']], time() + 24 * 3600, "/", "mitutorial.example.com");
+    setcookie('colourpreference', $colours[$_GET['colourchosen']], time() + 24 * 3600, "/");
 }
 ?>
 
